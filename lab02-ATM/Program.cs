@@ -60,11 +60,16 @@ public class Program
     {
         if(amount > Balance)
         {
-            throw new Exception("cannot withdraw ... check your balance");
+            //throw new Exception("cannot withdraw ... check your balance");
+            Console.WriteLine("cannot withdraw ... check your balance");
+            return Balance;
+
         }
         else if (amount <= 0)
         {
-            throw new Exception("please enter a positive number...");
+            //throw new Exception("please enter a positive number...");
+            Console.WriteLine("please enter a positive number...");
+            return Balance;
         }
         else
         {
